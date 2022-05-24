@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+        <TITLE>
+            VIRTUAL TOUR
+        </TITLE>
+
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+        <script src="./JS/tour.js"></script>
+    </HEAD>
+    <body>
+        <a-scene id="main-scene">
+      
+          <a-sky id="main-container" radius="5000" color="#98DAFC"></a-sky>
+      
+          <!-- Places Container -->
+          <a-entity id="places-container" tour></a-entity>
+      
+          <!-- CAMERA -->
+          <a-camera id="camera" wasd-controls="enabled:false;">
+           
+      
+          </a-camera>
+        </a-scene>
+      </body>
+</HTML>
